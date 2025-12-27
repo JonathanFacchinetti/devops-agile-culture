@@ -319,12 +319,12 @@ docker compose up -d --scale api=3
 
 Use imagens base oficiais e verificadas do Docker Hub que são testadas e aprovadas como estáveis e seguras. Evite usar imagens de fontes desconhecidas, pois podem ser maliciosas e não confiáveis.
 
-**❌ Evite:**
+** Evite:**
 ```dockerfile
 FROM ubuntu:latest
 ```
 
-**✅ Prefira:**
+**Prefira:**
 ```dockerfile
 FROM node:18-alpine
 # ou
@@ -360,14 +360,14 @@ CMD ["npm", "start"]
 
 Uma pesquisa da Sysdig descobriu que 58% dos containers de produção ainda executam como root, criando exposições significativas de segurança.
 
-**❌ Inseguro:**
+** Inseguro:**
 ```dockerfile
 FROM node:18
 # Código roda como root
 CMD ["node", "app.js"]
 ```
 
-**✅ Seguro:**
+** Seguro:**
 ```dockerfile
 FROM node:18-alpine
 
@@ -408,14 +408,14 @@ dist
 
 Docker utiliza cache de layers para builds mais rápidos. A ordem apropriada de comandos é crucial: coloque comandos que mudam com menos frequência no topo.
 
-**❌ Muitas layers:**
+** Muitas layers:**
 ```dockerfile
 RUN apt-get update
 RUN apt-get install -y curl
 RUN apt-get install -y git
 ```
 
-**✅ Layers otimizadas:**
+** Layers otimizadas:**
 ```dockerfile
 RUN apt-get update && \
     apt-get install -y curl git && \
@@ -455,12 +455,12 @@ docker scout cves minha-app:latest
 
 ### 8. Gerencie Secrets com Segurança
 
-**❌ NUNCA faça isso:**
+** NUNCA faça isso:**
 ```dockerfile
 ENV API_KEY=abc123secret
 ```
 
-**✅ Use Docker Secrets ou variáveis de ambiente:**
+** Use Docker Secrets ou variáveis de ambiente:**
 ```bash
 # Passar secret via variável de ambiente
 docker run -e API_KEY=$API_KEY minha-app
@@ -488,12 +488,12 @@ services:
 
 ### 10. Use Tags Específicas, Não 'latest'
 
-**❌ Evite:**
+** Evite:**
 ```dockerfile
 FROM node:latest
 ```
 
-**✅ Seja específico:**
+** Seja específico:**
 ```dockerfile
 FROM node:18.19.0-alpine3.19
 ```
@@ -642,7 +642,7 @@ Extensões que melhoram produtividade:
 
 ## Quando Usar Docker?
 
-### ✅ Use Docker Quando
+### Use Docker Quando
 
 - Precisa de ambientes consistentes entre dev/test/prod
 - Quer isolar aplicações e dependências
@@ -651,7 +651,7 @@ Extensões que melhoram produtividade:
 - Trabalha com microservices
 - Precisa de portabilidade entre clouds
 
-### ❌ Considere Alternativas Quando
+### Considere Alternativas Quando
 
 - Aplicação tem requisitos de performance extremamente altos
 - Aplicação precisa de acesso direto ao hardware
