@@ -30,8 +30,8 @@ Em 2024, gastos globais em tecnologia cloud foram projetados para atingir $675 b
 
 **O que é:** Você aluga infraestrutura virtual - acesso a recursos computacionais como VMs, armazenamento e redes, mas você gerencia o SO, runtime e aplicações em cima disso.
 
-** Você gerencia:** SO, runtime, configuração de aplicação  
-** Provedor gerencia:** Hardware, virtualização, armazenamento e rede
+**Você gerencia:** SO, runtime, configuração de aplicação  
+**Provedor gerencia:** Hardware, virtualização, armazenamento e rede
 
 **Exemplo:** Lançar uma instância EC2 na AWS ou uma Azure VM onde você instala e configura sua própria stack de software.
 
@@ -48,14 +48,14 @@ Em 2024, gastos globais em tecnologia cloud foram projetados para atingir $675 b
 - Google Compute Engine
 - DigitalOcean Droplets
 
-** Por que importa:** Fundamentos de IaaS são cruciais para engenheiros de suporte cloud, sysadmins e arquitetos de soluções. Dominar VMs, security groups, storage e networking é essencial em muitos trabalhos cloud.
+**Por que importa:** Fundamentos de IaaS são cruciais para engenheiros de suporte cloud, sysadmins e arquitetos de soluções. Dominar VMs, security groups, storage e networking é essencial em muitos trabalhos cloud.
 
 ### PaaS - Platform as a Service (Plataforma como Serviço)
 
 **O que é:** Faça deploy de código sem gerenciar infraestrutura - o provedor cloud cuida do SO, middleware e runtime. Você gerencia apenas o código da aplicação e dados.
 
-** Você gerencia:** Código da aplicação, dados  
-** Provedor gerencia:** SO, runtime, middleware, escalabilidade
+**Você gerencia:** Código da aplicação, dados  
+**Provedor gerencia:** SO, runtime, middleware, escalabilidade
 
 **Exemplo:** Use AWS Elastic Beanstalk, Google App Engine ou Azure App Services para fazer deploy de aplicações.
 
@@ -73,14 +73,14 @@ Em 2024, gastos globais em tecnologia cloud foram projetados para atingir $675 b
 - Heroku
 - Cloud Foundry
 
-** Por que importa:** PaaS acelera desenvolvimento permitindo que desenvolvedores foquem em código, não em infraestrutura. Ideal para startups e times que querem mover rápido.
+**Por que importa:** PaaS acelera desenvolvimento permitindo que desenvolvedores foquem em código, não em infraestrutura. Ideal para startups e times que querem mover rápido.
 
 ### SaaS - Software as a Service (Software como Serviço)
 
 **O que é:** Aplicações completas entregues pela internet. Você apenas usa o software, tudo mais é gerenciado pelo provedor.
 
-** Você gerencia:** Configurações e dados do usuário  
-** Provedor gerencia:** Tudo (aplicação, dados, runtime, middleware, SO, infraestrutura)
+**Você gerencia:** Configurações e dados do usuário  
+**Provedor gerencia:** Tudo (aplicação, dados, runtime, middleware, SO, infraestrutura)
 
 **Exemplos:**
 - **Google Workspace** (Gmail, Docs, Drive)
