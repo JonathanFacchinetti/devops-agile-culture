@@ -7,3 +7,28 @@
 *.yml   text eol=lf
 *.yaml  text eol=lf
 *.tf    text eol=lf
+
+# Force LF for source code
+*.js    text eol=lf
+*.ts    text eol=lf
+*.py    text eol=lf
+*.java  text eol=lf
+*.c     text eol=lf
+*.cpp   text eol=lf
+*.go    text eol=lf
+
+# Windows-specific files use CRLF
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+
+# Binary files
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary
+*.zip   binary
+*.exe   binary
+*.dll   binary
